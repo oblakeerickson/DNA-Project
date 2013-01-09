@@ -1,0 +1,75 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|			READ ME				|
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|Team Programming Project: Bioinformatics		|
+|COMPSCI 342: Data Structures and Algorithms, Fall 2012	|
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+|	Janos Cserna, Blake Erickson, Andrew Gable	|
+|		    12 December 2012			|
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+BTREE DESIGN: 
+________________
+|    BTREE      |
+|____OBJECT_____|
+|*Frequency     |
+|*Data (Long)   |
+|_______________|
+
+	|
+	|
+	|
+	V
+
+________________
+|    BTREE      |
+|_______________|
+|*Degree        |
+|*Node          |
+|  *Parent	|
+|  *DataNode[]  |
+|  *Pointers[]  |
+|  *isLeaf  bol | 
+|  *numKeys long|
+|  *offset  long|
+|_______________|
+
+OTHER METHODS IN BTREE:
+-isFull
+-isEmpty
+-BTreeSearch
+-BTreeCreate
+-setRoot
+-BTreeInsert
+-BTreeInsertNonful
+-Split
+-Split_Child
+-InOrder (Traversal Method)
+
+TESTING NOTES:
+Test1.gbk - 3.78 Seconds
+Test2.gbk - 6.90 Seconds
+Test3.gbk - 8.32 Seconds
+Test5.gbk - Optimal Degree - 45 Minutes
+Test5.gbk - 2 Degree - 1.5 Hours 
+
+Query 2 - 0.89 Seconds
+Query 3 - 1.25 Seconds 
+Query 16 - 3.9 Seconds
+Query 20 - 4.2 Seconds
+Query 31 - 6.3 Seconds
+
+
+
+Have a good Christmas,
+Janos, Blake, and Andrew.
+   _
+ ( ((
+  \ =\
+ __\_ `-\ 
+(____))(  \---- 
+(____)) _  
+(____))
+(____))____/----
+
